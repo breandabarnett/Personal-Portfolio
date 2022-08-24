@@ -26,13 +26,30 @@ h6 {
 h1 {
   font-weight: 800;
   font-size: 96px;
+  line-height: 1.5;
   letter-spacing: 1.5;
   color: var(--dark-accent-color);
 }
 
-h3 {
+h2 {
+  font-size: 40px;
   font-weight: 700;
-  font-size: 25px;
+  letter-spacing: 1;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  font-size: 40px;
+}
+
+footer a {
+  color: var(--branding-color);
 }
 
 .hero {
@@ -55,11 +72,84 @@ h3 {
   line-height: 2;
 }
 
+.project-highlight-section {
+  background: var(--light-accent-color);
+}
+
+.services-section {
+  background: var(--medium-accent-color);
+}
+
+.about-me-section {
+  background: var(--light-accent-color);
+}
+
+.contact-section {
+  background: var(--medium-accent-color);
+}
+
+.footer {
+  background: var(--medium-accent-color);
+}
+
 .btn-branding {
   background: var(--branding-color);
   color: var(--light-accent-color);
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 500;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 15px 30px;
+  color: var(--branding-color);
+  border-radius: 4px;
+  border: 1px solid var(--branding-color);
+}
+
+.project-description {
+  padding: 100px 60px 0;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .hero p {
+    font-size: 25px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 17px;
+  }
+
+  .btn-branding,
+  .btn-branding-outline {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
