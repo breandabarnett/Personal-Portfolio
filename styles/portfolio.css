@@ -1,36 +1,65 @@
+:root {
+  --branding-color: #6a57e4;
+  --light-accent-color: #e4fbff;
+  --medium-accent-color: #b8b5ff;
+  --dark-accent-color: #4636af;
+  --heading-font-family: "Sansita", sans-serif;
+  --default-font-family: "Montserrat", sans-serif;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: rgb(46, 46, 46);
-  background: rgb(211, 215, 255);
+  font-weight: 500;
+  font-family: var(--default-font-family);
+  background: var(--light-accent-color);
+  color: var(--branding-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
 }
 
 h1 {
-  font-family: "Sansita", sans-serif;
   font-weight: 800;
-  font-size: 90px;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
+  font-size: 96px;
+  letter-spacing: 1.5;
+  color: var(--dark-accent-color);
 }
 
 h3 {
-  font-family: "Sansita", sans-serif;
   font-weight: 700;
   font-size: 25px;
 }
 
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: right;
+.hero {
+  background: var(--medium-accent-color);
+  color: var(--branding-color);
+  text-align: center;
+  padding: 160px 20px;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
+.hero p {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: var(--default-font-family);
   font-weight: 500;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  color: var(--light-accent-color);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
