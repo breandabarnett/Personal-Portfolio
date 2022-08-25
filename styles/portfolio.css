@@ -1,8 +1,8 @@
 :root {
-  --branding-color: #6a57e4;
-  --light-accent-color: #e4fbff;
-  --medium-accent-color: #b8b5ff;
-  --dark-accent-color: #4636af;
+  --branding-color: #ffffff; /* main text */
+  --light-accent-color: #7f78d2; /* content */
+  --medium-accent-color: #d2d0fe; /* hero */
+  --dark-accent-color: #7f78d2; /* name */
   --heading-font-family: "Sansita", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -50,6 +50,10 @@ footer {
 
 footer a {
   color: var(--branding-color);
+}
+
+.navigation {
+  background: #d2d0fe;
 }
 
 .hero {
