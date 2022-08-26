@@ -37,6 +37,10 @@ h2 {
   letter-spacing: 0.5px;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 16px;
   line-height: 30px;
@@ -92,7 +96,7 @@ footer a {
 
 .hero h2 {
   font-family: var(--default-font-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 2;
 }
@@ -132,7 +136,8 @@ footer a {
   color: var(--medium-accent-color);
 }
 
-.skill-title {
+.skill-title,
+.contact-title {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -149,17 +154,49 @@ footer a {
   background: var(--medium-accent-color);
 }
 
+.about-container {
+  padding: 5rem 3rem;
+}
+
+.about-description {
+  text-align: center;
+}
+
+.about-image {
+  border-radius: 70px;
+}
+
 .contact-section {
   background: var(--light-accent-color);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contact-section a {
+  color: var(--branding-color);
+  letter-spacing: 0.5px;
+}
+
+.contact-title,
+.contact-section a:hover,
+.footer a:hover {
+  color: var(--medium-accent-color);
+}
+
+.email {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .footer {
   background: var(--light-accent-color);
+  padding: 3rem 0 2rem;
 }
 
 .btn-branding {
   background: var(--branding-color);
   color: var(--medium-accent-color);
+  letter-spacing: 0.25px;
   border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
@@ -195,7 +232,7 @@ footer a {
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 33px;
   }
 
   p {
