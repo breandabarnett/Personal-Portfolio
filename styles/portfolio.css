@@ -194,6 +194,7 @@ footer a {
 
 .card {
   background: var(--medium-accent-color);
+  text-align: center;
 }
 
 .card-title {
@@ -235,7 +236,6 @@ footer a {
 
 .btn-branding-outline:hover {
   color: var(--link-hover-color);
-  font-size: 18px;
 }
 
 @media (max-width: 800px) {
