@@ -1,6 +1,6 @@
 :root {
   --branding-color: #ffffff; /* main text */
-  --light-accent-color: #d2d0fe; /* hero */
+  --light-accent-color: #c1bffa; /* hero */
   --medium-accent-color: #7f78d2; /* content */
   --link-hover-color: rgb(109, 248, 248);
   --heading-font-family: "Sansita", sans-serif;
@@ -61,12 +61,20 @@ footer a {
   color: var(--branding-color);
 }
 
+.navbar-brand:hover {
+  color: var(--branding-color);
+}
+
 .navbar-nav {
   margin-left: auto;
 }
 
 .navbar-nav a {
   color: var(--default-font-family);
+}
+
+.nav-link:hover {
+  color: var(--medium-accent-color);
 }
 
 .hero {
@@ -89,6 +97,10 @@ footer a {
   line-height: 2;
 }
 
+.project-container {
+  padding: 5rem 0 1rem;
+}
+
 .project-highlight-section {
   background: var(--medium-accent-color);
 }
@@ -99,7 +111,7 @@ footer a {
 }
 
 .project-description {
-  padding: 30px;
+  padding: 0 30px;
   text-align: center;
 }
 
@@ -135,8 +147,8 @@ footer a {
 
 .btn-branding:hover {
   color: var(--branding-color);
-  background: var(--dark-accent-color);
-  border: 1px solid var(--dark-accent-color);
+  background: var(--medium-accent-color);
+  border: 1px solid var(--medium-accent-color);
 }
 
 .btn-branding-outline {
