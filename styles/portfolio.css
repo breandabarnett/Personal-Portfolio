@@ -1,8 +1,7 @@
 :root {
   --branding-color: #ffffff; /* main text */
-  --light-accent-color: #7f78d2; /* content */
-  --medium-accent-color: #d2d0fe; /* hero */
-  --dark-accent-color: #7f78d2; /* name */
+  --light-accent-color: #d2d0fe; /* hero */
+  --medium-accent-color: #7f78d2; /* content */
   --link-hover-color: rgb(109, 248, 248);
   --heading-font-family: "Sansita", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
@@ -29,7 +28,7 @@ h1 {
   font-size: 96px;
   line-height: 1.5;
   letter-spacing: 1.5;
-  color: var(--dark-accent-color);
+  color: var(--medium-accent-color);
 }
 
 h2 {
@@ -53,12 +52,25 @@ footer a {
   color: var(--branding-color);
 }
 
-.navigation {
-  background: #d2d0fe;
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  color: var(--branding-color);
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav a {
+  color: var(--default-font-family);
 }
 
 .hero {
-  background: var(--medium-accent-color);
+  background: var(--light-accent-color);
   color: var(--branding-color);
   text-align: center;
   padding: 160px 20px;
@@ -78,7 +90,7 @@ footer a {
 }
 
 .project-highlight-section {
-  background: var(--light-accent-color);
+  background: var(--medium-accent-color);
 }
 
 .project-highlight-image {
@@ -96,24 +108,24 @@ footer a {
 }
 
 .services-section {
-  background: var(--medium-accent-color);
-}
-
-.about-me-section {
   background: var(--light-accent-color);
 }
 
-.contact-section {
+.about-me-section {
   background: var(--medium-accent-color);
 }
 
+.contact-section {
+  background: var(--light-accent-color);
+}
+
 .footer {
-  background: var(--medium-accent-color);
+  background: var(--light-accent-color);
 }
 
 .btn-branding {
   background: var(--branding-color);
-  color: var(--light-accent-color);
+  color: var(--medium-accent-color);
   border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
