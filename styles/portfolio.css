@@ -44,7 +44,6 @@ a {
 p {
   font-size: 16px;
   line-height: 30px;
-  opacity: 0.8;
 }
 
 footer {
@@ -160,6 +159,7 @@ footer a {
 
 .about-description {
   text-align: center;
+  padding: 40px 10px 0;
 }
 
 .about-image {
@@ -186,6 +186,18 @@ footer a {
 .email {
   font-size: 18px;
   font-weight: 600;
+}
+
+.project-page-title {
+  color: var(--medium-accent-color);
+}
+
+.card {
+  background: var(--medium-accent-color);
+}
+
+.card-title {
+  letter-spacing: 0.5px;
 }
 
 .footer {
