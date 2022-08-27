@@ -62,6 +62,8 @@ footer a {
 
 .navbar-brand {
   color: var(--branding-color);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .navbar-brand:hover {
@@ -84,7 +86,7 @@ footer a {
   background: var(--light-accent-color);
   color: var(--branding-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 30px 80px;
 }
 
 .hero p {
