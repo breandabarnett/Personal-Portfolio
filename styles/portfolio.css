@@ -2,7 +2,7 @@
   --branding-color: #ffffff; /* main text */
   --light-accent-color: #c1bffa; /* hero */
   --medium-accent-color: #7f78d2; /* content */
-  --link-hover-color: rgb(109, 248, 248);
+  --link-hover-color: #424242;
   --heading-font-family: "Sansita", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -88,7 +88,7 @@ footer a {
 }
 
 .nav-link:hover {
-  color: var(--medium-accent-color);
+  color: var(--link-hover-color);
 }
 
 .hero {
@@ -128,7 +128,7 @@ footer a {
 }
 
 .project-highlight-image {
-  border-radius: 70px;
+  border-radius: 40px;
   max-width: 80%;
 }
 
@@ -138,7 +138,7 @@ footer a {
 }
 
 .project-description p {
-  padding: 0 60px;
+  padding: 0 100px;
 }
 
 .services-section {
@@ -300,6 +300,6 @@ footer a {
   }
 
   .project-description p {
-    padding: 0 60px;
+    padding: 0 35px;
   }
 }
