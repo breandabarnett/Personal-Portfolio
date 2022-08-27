@@ -1,7 +1,7 @@
 :root {
-  --branding-color: #ffffff; /* main text */
+  --text-color: #ffffff; /* main text */
   --light-accent-color: #c1bffa; /* hero */
-  --medium-accent-color: #7f78d2; /* content */
+  --brand-color: #7f78d2; /* content */
   --link-hover-color: #424242;
   --heading-font-family: "Sansita", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
@@ -17,7 +17,7 @@ body {
   font-weight: 500;
   font-family: var(--default-font-family);
   background: var(--light-accent-color);
-  color: var(--branding-color);
+  color: var(--text-color);
   min-height: 100vh;
   margin: auto;
   padding: 0;
@@ -25,7 +25,6 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -37,7 +36,7 @@ h1 {
   font-size: 96px;
   line-height: 1.5;
   letter-spacing: 1px;
-  color: var(--medium-accent-color);
+  color: var(--brand-color);
 }
 
 h2 {
@@ -61,7 +60,7 @@ footer {
 }
 
 footer a {
-  color: var(--branding-color);
+  color: var(--text-color);
 }
 
 .navbar {
@@ -70,13 +69,13 @@ footer a {
 }
 
 .navbar-brand {
-  color: var(--branding-color);
+  color: var(--text-color);
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .navbar-brand:hover {
-  color: var(--branding-color);
+  color: var(--text-color);
 }
 
 .navbar-nav {
@@ -93,22 +92,16 @@ footer a {
 
 .hero {
   background: var(--light-accent-color);
-  color: var(--branding-color);
+  color: var(--text-color);
   text-align: center;
-  padding: 30px 80px;
+  padding: 30px 80px 0;
 }
 
-.hero p {
-  font-size: 36px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.hero h2 {
-  font-family: var(--default-font-family);
+.hero h3 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 35px;
   line-height: 2;
+  letter-spacing: 1px;
 }
 
 .name-title {
@@ -116,7 +109,7 @@ footer a {
 }
 
 .project-container {
-  padding: 5rem 0 1rem;
+  padding: 4rem 0 1rem;
 }
 
 .row {
@@ -124,7 +117,7 @@ footer a {
 }
 
 .project-highlight-section {
-  background: var(--medium-accent-color);
+  background: var(--brand-color);
 }
 
 .project-highlight-image {
@@ -151,7 +144,7 @@ footer a {
 
 .skill-icon {
   font-size: 60px;
-  color: var(--medium-accent-color);
+  color: var(--brand-color);
 }
 
 .skill-title,
@@ -169,7 +162,7 @@ footer a {
 }
 
 .about-me-section {
-  background: var(--medium-accent-color);
+  background: var(--brand-color);
 }
 
 .about-container {
@@ -193,14 +186,14 @@ footer a {
 }
 
 .contact-section a {
-  color: var(--branding-color);
+  color: var(--text-color);
   letter-spacing: 0.5px;
 }
 
 .contact-title,
 .contact-section a:hover,
 .footer a:hover {
-  color: var(--medium-accent-color);
+  color: var(--brand-color);
 }
 
 .email {
@@ -209,11 +202,11 @@ footer a {
 }
 
 .project-page-title {
-  color: var(--medium-accent-color);
+  color: var(--brand-color);
 }
 
 .card {
-  background: var(--medium-accent-color);
+  background: var(--brand-color);
   text-align: center;
 }
 
@@ -227,8 +220,8 @@ footer a {
 }
 
 .btn-branding {
-  background: var(--branding-color);
-  color: var(--medium-accent-color);
+  background: var(--text-color);
+  color: var(--brand-color);
   letter-spacing: 0.25px;
   border-radius: 15px;
   font-size: 16px;
@@ -238,9 +231,9 @@ footer a {
 }
 
 .btn-branding:hover {
-  color: var(--branding-color);
-  background: var(--medium-accent-color);
-  border: 1px solid var(--medium-accent-color);
+  color: var(--text-color);
+  background: var(--brand-color);
+  border: 1px solid var(--brand-color);
 }
 
 .btn-branding-outline {
@@ -249,13 +242,29 @@ footer a {
   line-height: 2;
   letter-spacing: 0.5px;
   padding: 15px 30px;
-  color: var(--branding-color);
+  color: var(--text-color);
   border-radius: 20px;
   border: none;
 }
 
 .btn-branding-outline:hover {
   color: var(--link-hover-color);
+}
+
+.vertical-line-dark {
+  height: 5rem;
+  border-left: 2px solid var(--brand-color);
+  opacity: 0.8;
+  padding: 0;
+  display: flex;
+}
+
+.vertical-line-light {
+  height: 3rem;
+  border-left: 2px solid var(--light-accent-color);
+  opacity: 0.8;
+  padding: 0;
+  display: flex;
 }
 
 @media (max-width: 800px) {
@@ -271,16 +280,12 @@ footer a {
     font-size: 14px;
   }
 
-  .hero p {
-    font-size: 25px;
-  }
-
   .hero {
-    padding: 80px 20px;
+    padding: 80px 20px 0;
   }
 
-  .hero h2 {
-    font-size: 17px;
+  .hero h3 {
+    font-size: 25px;
   }
 
   .btn-branding,
