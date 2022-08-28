@@ -115,7 +115,7 @@ footer a {
 }
 
 .project-container {
-  padding: 4rem 4rem 1rem;
+  padding: 4rem 1rem 1rem;
 }
 
 .row {
@@ -214,21 +214,51 @@ footer a {
   font-weight: 600;
 }
 
-.project-page-title {
+/*Project Page Start*/
+.project-page {
+  background: #f8f7ff;
+  color: var(--dark-text);
+}
+
+.project-page a:hover {
   color: var(--brand-color);
 }
 
+.project-page-title,
+.project-page a {
+  color: var(--dark-text);
+}
+
+.project-page-container {
+  padding: 5rem;
+}
+
 .card {
-  background: var(--brand-color);
-  text-align: center;
+  border-radius: 2rem;
+  border: none;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 5px 6px 6px rgb(235 234 242 / 58%);
+  transition: all 0.25s ease-out;
+  margin-top: -10px;
+}
+
+.card-img-top {
+  border-radius: 2rem 2rem 0 0;
 }
 
 .card-title {
   letter-spacing: 0.5px;
 }
 
+.card-body {
+  padding: 1.5rem;
+}
+/*Project Page End*/
+
 .footer {
-  background: var(--light-accent-color);
   padding: 3rem 0 2rem;
 }
 
@@ -314,6 +344,10 @@ footer a {
 
   .project-description p {
     padding: 0 35px;
+  }
+
+  .project-page-container {
+    padding: 1.5rem;
   }
 
   .about-container {
