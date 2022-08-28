@@ -1,8 +1,10 @@
 :root {
-  --text-color: #ffffff; /* main text */
+  --light-text: #ffffff; /* main text */
+  --dark-text: #424242; /*accent text*/
   --light-accent-color: #c1bffa; /* hero */
   --brand-color: #7f78d2; /* content */
   --link-hover-color: #424242;
+  --white-background: #ffffff;
   --heading-font-family: "Sansita", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -17,7 +19,7 @@ body {
   font-weight: 500;
   font-family: var(--default-font-family);
   background: var(--light-accent-color);
-  color: var(--text-color);
+  color: var(--light-text);
   min-height: 100vh;
   margin: auto;
   padding: 0;
@@ -60,7 +62,7 @@ footer {
 }
 
 footer a {
-  color: var(--text-color);
+  color: var(--light-text);
 }
 
 .navbar {
@@ -69,13 +71,13 @@ footer a {
 }
 
 .navbar-brand {
-  color: var(--text-color);
+  color: var(--light-text);
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .navbar-brand:hover {
-  color: var(--text-color);
+  color: var(--light-text);
 }
 
 .navbar-nav {
@@ -92,7 +94,7 @@ footer a {
 
 .hero {
   background: var(--light-accent-color);
-  color: var(--text-color);
+  color: var(--light-text);
   text-align: center;
   padding: 30px 80px 0;
 }
@@ -109,7 +111,7 @@ footer a {
 }
 
 .project-container {
-  padding: 4rem 0 1rem;
+  padding: 4rem 4rem 1rem;
 }
 
 .row {
@@ -162,16 +164,22 @@ footer a {
 }
 
 .about-me-section {
-  background: var(--brand-color);
+  background: var(--white-background);
+  color: var(--dark-text);
+}
+
+.about-me-section h3 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--brand-color);
+  margin: 0;
 }
 
 .about-container {
-  padding: 5rem 3rem;
-}
-
-.about-description {
-  text-align: center;
-  padding: 40px 10px 0;
+  padding: 2rem 12rem 5rem;
 }
 
 .about-image {
@@ -186,7 +194,7 @@ footer a {
 }
 
 .contact-section a {
-  color: var(--text-color);
+  color: var(--light-text);
   letter-spacing: 0.5px;
 }
 
@@ -220,7 +228,7 @@ footer a {
 }
 
 .btn-branding {
-  background: var(--text-color);
+  background: var(--white-text);
   color: var(--brand-color);
   letter-spacing: 0.25px;
   border-radius: 15px;
@@ -231,7 +239,7 @@ footer a {
 }
 
 .btn-branding:hover {
-  color: var(--text-color);
+  color: var(--light-text);
   background: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
@@ -242,7 +250,7 @@ footer a {
   line-height: 2;
   letter-spacing: 0.5px;
   padding: 15px 30px;
-  color: var(--text-color);
+  color: var(--light-text);
   border-radius: 20px;
   border: none;
 }
@@ -284,8 +292,13 @@ footer a {
     padding: 80px 20px 0;
   }
 
-  .hero h3 {
-    font-size: 25px;
+  .hero h3,
+  .about-me-section h3 {
+    font-size: 30px;
+  }
+
+  .about-container {
+    padding: 1rem 2rem 5rem;
   }
 
   .btn-branding,
@@ -297,6 +310,10 @@ footer a {
 
   .btn-branding-outline:hover {
     font-size: 16px;
+  }
+
+  .project-container {
+    padding: 4rem 0rem 1rem;
   }
 
   .project-description {
