@@ -165,7 +165,7 @@ footer a {
 .skill-description {
   text-align: center;
   opacity: 0.8;
-  padding: 0 5rem 0;
+  padding: 0 4rem 0;
 }
 
 .about-me-section {
@@ -184,12 +184,24 @@ footer a {
 }
 
 .about-container {
-  padding: 2rem 12rem 5rem;
+  padding: 2rem 11rem 5rem;
 }
 
 .about-image {
-  border-radius: 70px;
-  max-width: 100%;
+  padding: 4rem;
+}
+
+.about-bio {
+  padding: 4rem 0 0 2rem;
+  font-size: 18px;
+}
+
+.about-bio a {
+  color: var(--brand-color);
+}
+
+.about-bio a:hover {
+  color: var(--link-hover-color);
 }
 
 .contact-section {
@@ -320,7 +332,7 @@ footer a {
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .hero {
@@ -351,7 +363,16 @@ footer a {
   }
 
   .about-container {
-    padding: 1rem 2rem 5rem;
+    padding: 1rem 0.75rem 4rem;
+  }
+
+  .about-image {
+    padding: 3rem;
+  }
+
+  .about-bio {
+    padding: 0.5rem;
+    text-align: center;
   }
 
   .services-container {
@@ -363,7 +384,7 @@ footer a {
   }
 
   .skill-description {
-    padding: 0 4px 0;
+    padding: 0 1.5rem 0;
   }
 
   .btn-branding,
