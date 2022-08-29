@@ -102,7 +102,7 @@ footer a {
   padding: 30px 80px 0;
 }
 
-.hero h3,
+.project-highlight-section h3,
 .services-section h3 {
   font-weight: 600;
   font-size: 35px;
@@ -115,7 +115,7 @@ footer a {
 }
 
 .project-container {
-  padding: 4rem 1rem 1rem;
+  padding: 3.5rem 7.5rem 6rem;
 }
 
 .row {
@@ -310,7 +310,7 @@ footer a {
   display: flex;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   h1 {
     font-size: 43px;
   }
@@ -327,14 +327,14 @@ footer a {
     padding: 80px 20px 0;
   }
 
-  .hero h3,
+  .project-highlight-section h3,
   .about-me-section h3,
   .services-section h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .project-container {
-    padding: 4rem 0rem 1rem;
+    padding: 1.5rem 1rem 3.5rem;
   }
 
   .project-description {
@@ -354,8 +354,12 @@ footer a {
     padding: 1rem 2rem 5rem;
   }
 
+  .services-container {
+    padding: 2.5rem 0;
+  }
+
   .skill-title {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .skill-description {
