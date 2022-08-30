@@ -156,40 +156,7 @@ footer a {
   opacity: 0.9;
 }
 
-.services-section {
-  background: var(--brand-color);
-}
-
-.services-section h3 {
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 2;
-  letter-spacing: 0.5px;
-}
-.services-container {
-  padding: 5rem 0;
-}
-
-.skill-icon {
-  font-size: 60px;
-  color: var(--light-accent-color);
-}
-
-.skill-title,
-.contact-title {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-align: center;
-  font-family: var(--heading-font-family);
-}
-
-.skill-description {
-  text-align: center;
-  opacity: 0.8;
-  padding: 0 4rem 0;
-}
-
+/* HOME- ABOUT ME */
 .about-me-section {
   background: var(--main-color);
   color: var(--deep-color);
@@ -222,16 +189,13 @@ footer a {
   font-size: 19px;
 }
 
-.about-bio a {
-  color: var(--deep-color);
-}
-
 .about-bio a:hover {
   color: var(--light-text);
 }
 
+/* HOME- CONTACT SECTION */
 .contact-section {
-  background: var(--light-accent-color);
+  background: var(--deep-color);
   padding: 0 0 5rem;
   text-align: center;
 }
@@ -241,10 +205,17 @@ footer a {
   letter-spacing: 0.5px;
 }
 
-.contact-title,
 .contact-section a:hover,
 .footer a:hover {
-  color: var(--brand-color);
+  color: var(--highlight-color);
+}
+
+.contact-title {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--main-color);
 }
 
 .email {
@@ -303,19 +274,23 @@ footer a {
   border: 1.5px solid var(--highlight-color);
 }
 
-.btn-branding-outline {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 2;
-  letter-spacing: 0.5px;
-  padding: 15px 30px;
-  color: var(--light-text);
-  border-radius: 20px;
-  border: none;
+.btn-white {
+  color: var(--main-color);
+  border: 1.5px solid var(--white-background);
+  background: var(--white-background);
+  letter-spacing: 0.25px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 8px 18px;
+  margin-right: 5px;
 }
 
-.btn-branding-outline:hover {
-  color: var(--link-hover-color);
+.btn-white:hover {
+  color: var(--light-text);
+  border: 1.5px solid var(--highlight-color);
+  background: var(--highlight-color);
 }
 
 .vertical-line-dark {
@@ -368,8 +343,7 @@ footer a {
     padding: 0rem 1rem;
   }
 
-  .about-me-section h3,
-  .services-section h3 {
+  .about-me-section h3 {
     font-size: 28px;
   }
 
@@ -382,20 +356,16 @@ footer a {
   }
 
   .about-bio {
-    padding: 0.5rem;
+    padding: 0rem;
     text-align: center;
   }
 
-  .services-container {
-    padding: 2.5rem 0;
+  .about-bio p {
+    font-size: 16px;
   }
 
-  .skill-title {
-    font-size: 35px;
-  }
-
-  .skill-description {
-    padding: 0 1.5rem 0;
+  .contact-title {
+    font-size: 30px;
   }
 
   .btn-branding,
