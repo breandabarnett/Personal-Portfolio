@@ -43,11 +43,6 @@ h3 {
   letter-spacing: 0.5px;
 }
 
-h4,
-h6 {
-  font-family: var(--heading-font-family);
-}
-
 a {
   text-decoration: none;
 }
@@ -253,26 +248,16 @@ footer a {
   font-weight: 600;
 }
 
-/*Project Page Start*/
-.project-page {
-  background: #f8f7ff;
-  color: var(--dark-text);
+/*PORTFOLIO PAGE*/
+.portfolio-collection-page {
+  background: var(--deep-color);
+  color: var(--light-text);
 }
 
-.project-page a:hover {
-  color: var(--brand-color);
+.portfolio-page-container {
+  padding: 0 5rem 5rem;
+  color: var(--deep-color);
 }
-
-.project-page-title,
-.project-page a {
-  color: var(--dark-text);
-}
-
-.project-page-container {
-  padding: 5rem;
-}
-
-/*Project Page End*/
 
 .footer {
   padding: 3rem 0 2rem;
@@ -384,10 +369,6 @@ footer a {
     font-size: 28px;
   }
 
-  .project-page-container {
-    padding: 1.5rem;
-  }
-
   .about-container {
     padding: 1rem 0.75rem 4rem;
   }
@@ -422,5 +403,10 @@ footer a {
 
   .btn-branding-outline:hover {
     font-size: 16px;
+  }
+
+  /*PORTFOLIO PAGE*/
+  .portfolio-page-container {
+    padding: 0 1rem 5rem;
   }
 }
