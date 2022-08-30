@@ -29,26 +29,23 @@ body {
 }
 
 h1,
-h2,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font-family);
-}
-
-h1 {
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  color: var(--brand-color);
-}
-
 h2 {
   font-family: var(--default-font-family);
   font-size: 45px;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: var(--default-font-family);
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+h4,
+h6 {
+  font-family: var(--heading-font-family);
 }
 
 a {
@@ -57,7 +54,7 @@ a {
 
 p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 footer {
@@ -69,6 +66,7 @@ footer a {
   color: var(--light-text);
 }
 
+/* HOME- NAVBAR */
 .navbar {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -103,6 +101,7 @@ footer a {
   color: var(--light-text);
 }
 
+/* HOME- HERO SECTION */
 .hero {
   background: var(--deep-color);
   color: var(--main-color);
@@ -117,49 +116,61 @@ footer a {
   color: var(--highlight-color);
 }
 
-.project-highlight-section h3,
-.services-section h3 {
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 2;
-  letter-spacing: 0.5px;
-}
-
-.name-title {
-  max-width: 100%;
-}
-
-.project-container {
-  padding: 3.5rem 7.5rem 6rem;
-}
-
-.row {
-  --bs-gutter-x: 0;
-}
-
-.project-highlight-section {
+/* HOME- PORTFOLIO HIGHLIGHTS */
+.portfolio-highlights {
+  padding: 0rem 5rem;
   background: var(--white-background);
   color: var(--deep-color);
 }
 
-.project-highlight-image {
-  border-radius: 40px;
-  max-width: 80%;
+.portfolio-cards {
+  padding: 3.5rem 0;
 }
 
-.project-description {
-  padding: 0 20px;
-  text-align: center;
+.card {
+  border-radius: 2rem;
+  border: none;
+  margin: auto;
 }
 
-.project-description p {
-  padding: 0 100px;
+.card:hover {
+  box-shadow: 5px 6px 6px rgb(235 234 242 / 58%);
+  transition: all 0.25s ease-out;
+  margin-top: -10px;
+}
+
+.card-img-top {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card-title {
+  font-family: var(--default-font-family);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card-body {
+  background: #7ce9eb25;
+  border-radius: 0 0 2rem 2rem;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 1.5rem;
+}
+
+.card-body p {
+  opacity: 0.9;
 }
 
 .services-section {
   background: var(--brand-color);
 }
 
+.services-section h3 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
 .services-container {
   padding: 5rem 0;
 }
@@ -261,29 +272,6 @@ footer a {
   padding: 5rem;
 }
 
-.card {
-  border-radius: 2rem;
-  border: none;
-  margin: auto;
-}
-
-.card:hover {
-  box-shadow: 5px 6px 6px rgb(235 234 242 / 58%);
-  transition: all 0.25s ease-out;
-  margin-top: -10px;
-}
-
-.card-img-top {
-  border-radius: 2rem 2rem 0 0;
-}
-
-.card-title {
-  letter-spacing: 0.5px;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
 /*Project Page End*/
 
 .footer {
@@ -357,17 +345,17 @@ footer a {
   display: flex;
 }
 
-@media (max-width: 767px) {
-  h1 {
-    font-size: 43px;
-  }
+.row {
+  --bs-gutter-x: 0;
+}
 
-  h2 {
-    font-size: 33px;
+@media (max-width: 767px) {
+  h3 {
+    font-size: 30px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .hero {
@@ -378,7 +366,8 @@ footer a {
     padding-top: 0rem;
   }
 
-  .hero h2 {
+  .hero h1,
+  h2 {
     font-size: 27px;
   }
 
@@ -386,23 +375,13 @@ footer a {
     padding: 1rem;
   }
 
-  .project-highlight-section h3,
+  .portfolio-highlights {
+    padding: 0rem 1rem;
+  }
+
   .about-me-section h3,
   .services-section h3 {
     font-size: 28px;
-  }
-
-  .project-container {
-    padding: 1.5rem 1rem 3.5rem;
-  }
-
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-
-  .project-description p {
-    padding: 0 35px;
   }
 
   .project-page-container {
