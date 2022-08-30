@@ -93,7 +93,7 @@ footer a {
 }
 
 .nav-link:hover {
-  color: var(--light-text);
+  color: var(--highlight-color);
 }
 
 /* HOME- HERO SECTION */
@@ -271,6 +271,7 @@ footer a {
 
 .btn-outline:hover {
   color: var(--light-text);
+  background: var(--highlight-color);
   border: 1.5px solid var(--highlight-color);
 }
 
