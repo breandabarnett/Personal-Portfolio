@@ -66,7 +66,7 @@ footer a {
 
 /* HOME- NAVBAR */
 .navbar {
-  -webkit-backdrop-filter: blur(5px);
+  background: #2f44544f;
   backdrop-filter: blur(5px);
 }
 
@@ -98,7 +98,7 @@ footer a {
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--light-text);
+  color: #ffffff;
 }
 
 .nav-link:hover {
@@ -206,7 +206,7 @@ footer a {
 /* HOME- CONTACT SECTION */
 .contact-section {
   background: var(--deep-color);
-  padding: 0 0 5rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -225,7 +225,11 @@ footer a {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: center;
-  color: var(--main-color);
+  color: var(--light-text);
+}
+
+.contact-image {
+  width: 600px;
 }
 
 .email {
@@ -248,7 +252,8 @@ footer a {
   padding: 3rem 0 2rem;
 }
 
-.btn-branding {
+.btn-branding,
+.btn-contact {
   background: var(--main-color);
   color: var(--light-text);
   letter-spacing: 0.25px;
@@ -261,13 +266,15 @@ footer a {
   margin-right: 5px;
 }
 
-.btn-branding:hover {
+.btn-branding:hover,
+.btn-contact:hover {
   color: var(--light-text);
   background: var(--highlight-color);
   border: 1.5px solid var(--highlight-color);
 }
 
-.btn-outline {
+.btn-outline,
+.btn-email {
   color: var(--light-text);
   border: 1.5px solid var(--main-color);
   letter-spacing: 0.25px;
@@ -302,6 +309,24 @@ footer a {
   color: var(--light-text);
   border: 1.5px solid var(--highlight-color);
   background: var(--highlight-color);
+}
+
+.btn-email {
+  margin: 0;
+  border-right: none;
+  padding: 8px 14px;
+}
+
+.btn-email:hover {
+  border: 1.5px solid var(--main-color);
+  border-right: none;
+  cursor: auto;
+}
+
+.btn-contact {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 8px 14px;
 }
 
 .vertical-line-dark {
@@ -379,8 +404,17 @@ footer a {
     font-size: 16px;
   }
 
+  .contact-section p {
+    padding: 0 0.25rem 0;
+    font-size: 12px;
+  }
+
   .contact-title {
     font-size: 30px;
+  }
+
+  .contact-image {
+    padding: 1rem;
   }
 
   .btn-branding,
@@ -388,6 +422,11 @@ footer a {
     font-size: 15px;
     line-height: 20px;
     padding: 10px 20px;
+  }
+
+  .btn-email,
+  .btn-contact {
+    font-size: 13px;
   }
 
   .btn-branding-outline:hover {
