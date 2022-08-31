@@ -1,15 +1,10 @@
 :root {
-  --light-text: #ffffff; /* main text */
-  --dark-text: #424242; /*accent text*/
-  --light-accent-color: #c1bffa; /* hero */
-  --brand-color: #7f78d2; /* content */
-  --link-hover-color: #424242;
-  --white-background: #ffffff;
-  --heading-font-family: "Sansita", sans-serif;
-  --default-font-family: "Poppins", sans-serif;
   --deep-color: #2f4454;
   --main-color: #5cafb1;
   --highlight-color: #e2889e;
+  --light-text: #ffffff;
+  --white-background: #ffffff;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -50,6 +45,14 @@ a {
 p {
   font-size: 16px;
   line-height: 25px;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid var(--highlight-color);
+  margin: 1rem auto;
+  width: 35rem;
+  opacity: 0.9;
 }
 
 footer {
@@ -230,7 +233,7 @@ footer a {
 }
 
 .portfolio-page-container {
-  padding: 0 5rem 5rem;
+  padding: 0 8rem 5rem;
   color: var(--deep-color);
 }
 
@@ -321,6 +324,10 @@ footer a {
 
   p {
     font-size: 15px;
+  }
+
+  hr {
+    width: 16rem;
   }
 
   .hero {
