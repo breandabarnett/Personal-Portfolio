@@ -180,7 +180,8 @@ footer a {
 }
 
 .about-image {
-  border-radius: 40%;
+  width: 315px;
+  border-radius: 48%;
   padding: 1rem;
 }
 
