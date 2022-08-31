@@ -4,6 +4,8 @@
   --highlight-color: #e2889e;
   --light-text: #ffffff;
   --white-background: #ffffff;
+  --navbar-background: #2f44544f;
+  --transparent-main-color: #7ce9eb25;
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -56,8 +58,7 @@ hr {
 }
 
 footer {
-  text-align: center;
-  font-size: 40px;
+  margin: 8rem 0 2rem;
 }
 
 footer a {
@@ -66,7 +67,7 @@ footer a {
 
 /* HOME- NAVBAR */
 .navbar {
-  background: #2f44544f;
+  background: var(--navbar-background);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -99,7 +100,7 @@ footer a {
 }
 
 .navbar-nav .nav-link.active {
-  color: #ffffff;
+  color: var(--light-text);
 }
 
 .nav-link:hover {
@@ -156,7 +157,7 @@ footer a {
 }
 
 .card-body {
-  background: #7ce9eb25;
+  background: var(--transparent-main-color);
   border-radius: 0 0 2rem 2rem;
   font-weight: 400;
   font-size: 15px;
@@ -236,6 +237,22 @@ footer a {
   font-weight: 600;
 }
 
+/*HOME- FOOTER SECTION*/
+footer .social-links a {
+  font-size: 30px;
+  padding: 10px 19px;
+  margin: 0 20px;
+  border-radius: 50%;
+  color: var(--main-color);
+  background: var(--transparent-main-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--light-text);
+  background: var(--highlight-color);
+}
+
 /*PORTFOLIO PAGE*/
 .portfolio-collection-page {
   background: var(--deep-color);
@@ -247,10 +264,7 @@ footer a {
   color: var(--deep-color);
 }
 
-.footer {
-  padding: 3rem 0 2rem;
-}
-
+/*BUTTONS & LINES*/
 .btn-branding,
 .btn-contact {
   background: var(--main-color);
@@ -351,6 +365,7 @@ footer a {
   --bs-gutter-x: 0;
 }
 
+/*SMALLER DEVICE ADJUSTMENTS*/
 @media (max-width: 767px) {
   h3 {
     font-size: 30px;
@@ -362,6 +377,10 @@ footer a {
 
   hr {
     width: 16rem;
+  }
+
+  footer {
+    margin: 5rem 0 2rem;
   }
 
   .hero {
@@ -417,6 +436,12 @@ footer a {
 
   .contact-image {
     padding: 1rem;
+  }
+
+  footer .social-links a {
+    font-size: 22px;
+    padding: 8px 17px;
+    margin: 0 10px;
   }
 
   .btn-branding,
