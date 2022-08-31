@@ -104,6 +104,7 @@ footer a {
 
 .nav-link:hover {
   color: var(--highlight-color);
+  transition: all 100ms ease-in-out;
 }
 
 /* HOME- HERO SECTION */
@@ -140,7 +141,7 @@ footer a {
 
 .card:hover {
   box-shadow: 5px 6px 6px rgb(235 234 242 / 58%);
-  transition: all 0.25s ease-out;
+  transition: all 100ms ease-in-out;
   margin-top: -10px;
 }
 
@@ -200,10 +201,6 @@ footer a {
   font-size: 19px;
 }
 
-.about-bio a:hover {
-  color: var(--light-text);
-}
-
 /* HOME- CONTACT SECTION */
 .contact-section {
   background: var(--deep-color);
@@ -219,6 +216,7 @@ footer a {
 .contact-section a:hover,
 .footer a:hover {
   color: var(--highlight-color);
+  transition: all 100ms ease-in-out;
 }
 
 .contact-title {
@@ -272,6 +270,7 @@ footer a {
   color: var(--light-text);
   background: var(--highlight-color);
   border: 1.5px solid var(--highlight-color);
+  transition: all 100ms ease-in-out;
 }
 
 .btn-outline,
@@ -291,6 +290,7 @@ footer a {
   color: var(--light-text);
   background: var(--highlight-color);
   border: 1.5px solid var(--highlight-color);
+  transition: all 100ms ease-in-out;
 }
 
 .btn-white {
@@ -310,6 +310,7 @@ footer a {
   color: var(--light-text);
   border: 1.5px solid var(--highlight-color);
   background: var(--highlight-color);
+  transition: all 100ms ease-in-out;
 }
 
 .btn-email {
