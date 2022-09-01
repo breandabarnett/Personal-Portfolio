@@ -265,6 +265,33 @@ footer .social-links a:hover {
   color: var(--deep-color);
 }
 
+/*ABOUT PAGE*/
+.about-page-container {
+  padding: 2rem 5.5rem 10rem;
+}
+
+.about-page-title {
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--main-color);
+}
+
+.bracket {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--main-color);
+}
+
+.about-page-bio {
+  padding: 4rem 2rem 2rem;
+}
+
+.about-page-bio p {
+  font-size: 19px;
+}
+
 /*BUTTONS & LINES*/
 .btn-branding,
 .btn-contact {
@@ -470,5 +497,28 @@ footer .social-links a:hover {
   /*PORTFOLIO PAGE*/
   .portfolio-page-container {
     padding: 0 1rem 2rem;
+  }
+
+  /*ABOUT PAGE*/
+  .about-page-container {
+    padding: 0 1rem 10rem;
+    text-align: center;
+  }
+
+  .about-page-title {
+    font-size: 27px;
+  }
+
+  .bracket {
+    font-size: 40px;
+  }
+
+  .about-page-bio {
+    padding: 2rem 0.75rem 0;
+  }
+
+  .about-page-bio p {
+    font-size: 16px;
+    font-weight: 400;
   }
 }
