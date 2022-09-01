@@ -292,6 +292,15 @@ footer .social-links a:hover {
   font-size: 19px;
 }
 
+.about-page-skills .card-body {
+  color: var(--deep-color);
+  border-radius: 2rem;
+}
+
+.about-icons {
+  font-size: 30px;
+}
+
 /*BUTTONS & LINES*/
 .btn-branding,
 .btn-contact {
