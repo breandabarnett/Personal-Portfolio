@@ -281,7 +281,8 @@ footer .social-links a:hover {
   background: var(--white-background);
 }
 
-.about-page-bio p {
+.about-page-bio p,
+.about-page-education p {
   font-size: 19px;
   font-weight: 500;
 }
@@ -309,6 +310,16 @@ footer .social-links a:hover {
 
 .about-icons {
   font-size: 45px;
+}
+
+.about-page-education {
+  background: var(--white-background);
+  color: var(--deep-color);
+  padding: 0 1rem 5rem;
+}
+
+.education-text {
+  padding-left: 1rem;
 }
 
 /*BUTTONS & LINES*/
@@ -544,5 +555,23 @@ footer .social-links a:hover {
   .about-icons {
     font-size: 35px;
     padding: 1rem;
+  }
+
+  .about-page-education {
+    text-align: left;
+    padding: 0 0.5rem 5rem;
+  }
+
+  .about-page-education p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .about-page-education h3 {
+    text-align: center;
+  }
+
+  .education-text {
+    padding-left: 0.5rem;
   }
 }
