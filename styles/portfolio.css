@@ -237,7 +237,7 @@ footer a {
 
 /*HOME- FOOTER SECTION*/
 footer .social-links a {
-  font-size: 20px;
+  font-size: 22px;
   margin: 0 10px;
   transition: all 100ms ease-in-out;
 }
@@ -505,7 +505,11 @@ footer .social-links a:hover {
 
   footer .social-links a {
     font-size: 18px;
-    margin: 0 8px;
+    margin: 0 6px;
+  }
+
+  footer p {
+    font-size: 13px;
   }
 
   .btn-branding,
