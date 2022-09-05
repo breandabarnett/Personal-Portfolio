@@ -403,18 +403,10 @@ footer .social-links a:hover {
   padding: 8px 14px;
 }
 
-.vertical-line-dark {
-  height: 5rem;
+.vertical-line-pink {
+  height: 4rem;
   border-left: 2px solid var(--highlight-color);
   opacity: 0.8;
-  padding: 0;
-  display: flex;
-}
-
-.vertical-line-light {
-  height: 3rem;
-  border-left: 2px solid var(--highlight-color);
-  opacity: 0.4;
   padding: 0;
   display: flex;
 }
