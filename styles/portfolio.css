@@ -548,14 +548,17 @@ footer .social-links a:hover {
     padding: 2rem 1rem 0;
   }
 
-  .about-page-bio p,
-  .about-page-skills p {
+  .about-page-bio p {
     font-size: 16px;
   }
 
+  .about-page-skills p {
+    font-size: 14px;
+  }
+
   .about-icons {
-    font-size: 35px;
-    padding: 1rem;
+    font-size: 37px;
+    padding: 1.25rem;
   }
 
   .about-page-education {
