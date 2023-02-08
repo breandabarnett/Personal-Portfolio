@@ -132,7 +132,7 @@ footer a {
 }
 
 .card {
-  border-radius: 2rem;
+  border-radius: 2.1rem;
   border: none;
   margin: auto;
 }
@@ -141,6 +141,10 @@ footer a {
   box-shadow: 5px 6px 6px rgb(235 234 242 / 58%);
   transition: all 100ms ease-in-out;
   margin-top: -10px;
+}
+
+.card-highlight {
+  border: 1.5px solid rgba(92, 176, 177, 0.1);
 }
 
 .card-img-top {
@@ -156,6 +160,7 @@ footer a {
 .card-body {
   background: var(--transparent-main-color);
   border-radius: 0 0 2rem 2rem;
+
   font-weight: 400;
   font-size: 15px;
   padding: 1.5rem;
