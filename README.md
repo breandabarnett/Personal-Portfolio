@@ -16,4 +16,4 @@ Take a look!
 
 **React.Dictionary:** https://github.com/breandabarnett/dictionary-project
 
-**Houseplants for Small Spaces Quiz Page** https://github.com/breandabarnett/houseplant-landing-page
+**Houseplants for Small Spaces Quiz** https://github.com/breandabarnett/houseplant-landing-page
