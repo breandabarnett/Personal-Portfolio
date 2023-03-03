@@ -2,6 +2,9 @@
  A sleek personal portfolio website that showcases a collection of my projects and features a flexible, multi-page layout. Has smooth responsiveness for various screen sizes that looks great on any device, from laptops to mobile phones. Built using HTML, CSS, and Bootstrap.
 
 <h4>🔗 https://breanda.netlify.app/</h4>
+
+<img src="https://user-images.githubusercontent.com/104718008/222639059-5bec69f3-1d1e-40cb-9479-9e18752fb654.gif" alt="live site preview gif"/>
+
 <br />
 <p>
   🏅 This was a 
